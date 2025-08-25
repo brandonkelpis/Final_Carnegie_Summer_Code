@@ -17,7 +17,7 @@ import scipy.constants as const
 # We have to download the data table of Ackermann et al. (2015)
 # to make everything work out
 
-if not os.path.exists("/Users/brandonkelpis/Desktop/Carnegie/Paper_Code/data/apj504089t3_mrt.txt"):
+if not os.path.exists(".../data/apj504089t3_mrt.txt"):
     print("""If you want to use all aspects of gammaray module, you need to download
 #              the isotropic gamma ray background table (Ackermann et al, 2015) from
 #              https://iopscience.iop.org/article/10.1088/0004-637X/799/1/86#apj504089t3
