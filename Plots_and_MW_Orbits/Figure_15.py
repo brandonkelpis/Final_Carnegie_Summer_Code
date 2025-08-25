@@ -37,7 +37,7 @@ chistar = orbits["chi_star"][-1] * np.ones_like(orbits["chi_star"])
 rperi = np.min(r, axis=0)
 
 Bstar = 2.*np.pi*np.clip(chistar, 1e-10, None)*mw.G
-Beff= em.sample_effective_B_hist(shape, Bminfac=1e-4, p=1.2, initial_sample=100000, cachefile="/Users/brandonkelpis/Desktop/Carnegie/Complete_Code/caches/Beff_hist.hdf5") * Bstar #deleted %cachedir part at end of function.
+Beff= em.sample_effective_B_hist(shape, Bminfac=1e-4, p=1.2, initial_sample=100000, cachefile=".../caches/Beff_hist.hdf5") * Bstar #deleted %cachedir part at end of function.
 Beff_tide = np.sqrt(np.clip(42.2*mw.radial_mean_tide(rperi), 1e-10, None))*np.ones(r.shape)
 Beff_tot= np.sqrt(Beff**2 + Beff_tide**2)
 
