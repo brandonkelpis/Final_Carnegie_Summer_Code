@@ -29,7 +29,7 @@ except:
     comm = None
     rank = 0
 
-cachedir = "/Users/brandonkelpis/Desktop/Final_Carnegie_Code-main/Plots_and_MW_Orbits/caches"
+cachedir = ".../caches"
 mw = MilkyWay(adiabatic_contraction=True, cachedir=cachedir, mode="cautun_2020")
 
 t0 = time.time()
