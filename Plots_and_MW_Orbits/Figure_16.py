@@ -12,7 +12,7 @@ import Create_Orbits_Mpi
 from MilkyWay_Orbits import MilkyWay
 
 
-cachedir = "/Users/brandonkelpis/Desktop/Final_Carnegie_Code-main/Plots_and_MW_Orbits/caches"
+cachedir = ".../caches"
 G = 43.0071057317063e-10 # Mpc (km/s)^2 / Msol 
 mw = MilkyWay(adiabatic_contraction=True, cachedir=cachedir, mode="cautun_2020")
 
